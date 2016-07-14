@@ -1,0 +1,9 @@
+*.log
+.DS_Store
+Thumbs.db
+build/
+releases/
+node_modules/
+nw/
+tmp/
+app/js/vendor/

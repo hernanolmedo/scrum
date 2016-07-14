@@ -1,0 +1,75 @@
+<div id="wrapper">
+	<div id="header">
+		<img id="logo" ng-src="./img/SetOficialPng/UDSHCOLOR.png" alt="..." class="img-rounded">
+		<div id="title">
+			<h1>Scrum - Objeto de Aprendizaje</h1>
+			<h2>Departamento de Ingeniería Informática</h2>
+		</div>
+	</div>
+	<div id="page-content-wrapper">
+		<div ng-controller="AlertCtrl">
+			<alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>		  	
+		</div>
+		<div ui-view="mainView"></div>
+	</div>
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			<li ng-class="{active: index==0}">
+				<a ng-click="set(0)"></span>Introducción</a>
+				<ul>
+					<li ng-class="{active: index==1}"><a ng-click="set(1)"></span>Ciclo de Vida del Software</a></li>
+					<li ng-class="{active: index==2}"><a ng-click="set(2)"></span>Manifiesto ágil</a></li>
+					<li ng-class="{active: index==3}"><a ng-click="set(3)"></span>Principios del Manifiesto</a></li>
+					<li ng-class="{active: index==4}"><a ng-click="set(4)"></span>Scrum</a></li>
+				</ul>
+			</li>
+			<li ng-class="{active: index==5}">
+				<a ng-click="set(5)"></span>Equipo Scrum</a>
+				<ul>
+					<li ng-class="{active: index==6}"><a ng-click="set(6)"></span>Product Owner</a></li>
+					<li ng-class="{active: index==7}"><a ng-click="set(7)"></span>Development Team</a></li>
+					<li ng-class="{active: index==8}"><a ng-click="set(8)"></span>Scrum Master</a></li>
+				</ul>
+			</li>
+			<li ng-class="{active: index==9}">
+				<a ng-click="set(9)"></span>Eventos de Scrum</a>
+				<ul>
+					<li ng-class="{active: index==10}"><a ng-click="set(10)"></span>Sprint</a></li>
+					<li ng-class="{active: index==11}"><a ng-click="set(11)"></span>Sprint Planning Meeting</a></li>
+					<li ng-class="{active: index==12}"><a ng-click="set(12)"></span>Daily Scrum</a></li>
+					<li ng-class="{active: index==13}"><a ng-click="set(13)"></span>Sprint Review</a></li>
+					<li ng-class="{active: index==14}"><a ng-click="set(14)"></span>Sprint Retrospective</a></li>
+				</ul>
+			</li>
+			<li ng-class="{active: index==15}">
+				<a ng-click="set(15)"></span>Artefactos de Scrum</a>
+				<ul>
+					<li ng-class="{active: index==16}"><a ng-click="set(16)"></span>Product Backlog</a></li>
+					<li ng-class="{active: index==17}"><a ng-click="set(17)"></span>Sprint Backlog</a></li>
+				</ul>
+			</li>
+			<li ng-class="{active: index>=18}">
+				<a ng-click="set(18)"></span>Caso Práctico</a>
+			</li>
+		</ul>
+	</div>
+	<div id="progress-wrapper" class="row" style="position: absolute; bottom: 10px;right:40px;width:76%;">
+		<div class="col-sm-2">
+			<ul class="pager">
+				<li class="previous"><a ng-click="set(index-1)" ng-disabled="index == 0">Anterior</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-8">
+			<div class="progress">
+				<div ng-class="{'progress-bar':true, 'progress-bar-success': (percent > 66), 'progress-bar-danger': (percent <= 33), 'progress-bar-warning':(percent <= 66)}" role="progressbar" aria-valuenow="{{percent}}" aria-valuemin="0" aria-valuemax="100" style="width:{{percent}}%">
+					{{((percent | number:0)*1)}}% Completado
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<ul class="pager">
+				<li class="next"><a ng-click="set(index+1)" ng-disabled="index == cant">Siguiente</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

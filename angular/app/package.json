@@ -1,0 +1,22 @@
+{
+    "name": "scrum",
+    "prettyName": "Objeto de aprendisaje de Scrum - Trabajo de Título",
+    "description": "",
+    "version": "1.0.7",
+    "author": "Mario Muñoz Villegas <mario.munozv@usach.cl>",
+    "main": "index.html",
+    "nodejs": true,
+    "window": {
+        "title": "Objeto de aprendisaje de Scrum - Trabajo de Título",
+        "icon": "icon.png",
+        "show": true,
+        "toolbar": true,
+        "width": 1000,
+        "height": 600,
+        "min_width": 800,
+        "min_height": 400,
+        "position": "center"
+    },
+    "dependencies": {},
+    "developmentMode": true
+}
