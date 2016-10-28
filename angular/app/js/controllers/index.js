@@ -21,7 +21,7 @@ angular.module('scrum.controllers.index', [])
 						title: "Introducción",
 						subtitle: "Ciclo de Vida del Software",
 						sections: [
-										"obtener resultados rapidos adaptandose,iterativo e incremental,transparencia, inspeccion y revision,,concepto,especulacion,exploracion,revision,cierre,",
+										"<div><p>En la figura se muestra un ciclo de vida clásico. Este ciclo es iterativo, ya que desde cualquier punto se puede volver al anterior en caso de no pasar una revisión.</p></div><br /><div><img id='logo' class='img-responsive' src='./img/ciclo_de_vida.png' alt='...' class='img-rounded'></div>"
 									]
 					},
 					{
@@ -68,57 +68,84 @@ angular.module('scrum.controllers.index', [])
 						title: "El Equipo Scrum",
 						subtitle: "Development Team",
 						sections: [
-										"Este equipo está compuesto por los profesionales que son los que, exclusivamente, realizan el trabajo de desarrollar y entregar un incremento de producto “Terminado” tras cada Sprint, el cual puede ser potencialmente puesto en marcha una vez entregado.",
-										"Al Equipo de Desarrollo se le empodera para que gestione su propio trabajo. Es por esto que el Equipo se caracteriza por ser:",
+										"<p>Este equipo está compuesto por los profesionales que son los que, exclusivamente, realizan el trabajo de desarrollar y entregar un incremento de producto “Terminado” tras cada Sprint, el cual puede ser potencialmente puesto en marcha una vez entregado.</p>",
+										"<p>Al Equipo de Desarrollo se le empodera para que gestione su propio trabajo. Es por esto que el Equipo se caracteriza por ser:</p>",
+										"<ul><li>Autoorganizado: El propio Equipo de Desarrollo determina cómo convertir los elementos de la Lista de Producto en funcionalidades potencialmente desplegables tras cada Sprint, esto es, ninguna persona puede establecer la forma en que este equipo trabaja, ni siquiera el Scrum Master.</li><li>Multifuncional: Dentro del equipo, los profesionales se especializan en diferentes áreas, por lo que conforman una entidad que cuenta, como equipo, con todas las habilidades necesarias para desarrollar el trabajo necesario para llevar a cabo los incrementos del producto.</li><li>No se reconocen títulos personales: Sin excepciones, cada miembro del Equipo de Desarrollo es un Desarrollador, sea cual sea el trabajo que realice.</li><li>No se reconocen sub-equipos: El marco de trabajo Scrum no reconoce sub-equipos formados a partir de los integrantes del Equipo de Desarrollo, a pesar de los dominios particulares que se requieran para llevar a cabo el trabajo. Tampoco existen excepciones a esta regla.</li><li>La responsabilidad es del Equipo de Desarrollo: Como un todo, este equipo tiene toda la responsabilidad del trabajo que desempeña, independientemente de las habilidades especializadas y de que ciertos integrantes se enfoquen en cierta área en particular.</li></ul>"
 									],
 					},
 					{
 						title: "Conceptos Básicos",
 						subtitle: "Scrum Master",
 						sections: [
-										"El Scrum Master es el responsable de asegurar que Scrum es entendido y adoptado. Los Scrum Masters hacen esto asegurándose de que el Equipo Scrum trabaja ajustándose a la teoría, prácticas y reglas de Scrum.",
-										"El Scrum Master es un líder que está al servicio del Equipo Scrum. El Scrum Master ayuda a las personas externas al Equipo Scrum a entender qué interacciones con el Equipo Scrum pueden ser de ayuda y cuáles no. El Scrum Master ayuda a todos a modificar estas interacciones para maximizar el valor creado por el Equipo Scrum.",
+										"<p>El Scrum Master es el responsable de asegurar que Scrum es entendido y adoptado. Los Scrum Masters hacen esto asegurándose de que el Equipo Scrum trabaja ajustándose a la teoría, prácticas y reglas de Scrum.</p>",
+										"<p>El Scrum Master es un líder que está al servicio del Equipo Scrum. El Scrum Master ayuda a las personas externas al Equipo Scrum a entender qué interacciones con el Equipo Scrum pueden ser de ayuda y cuáles no. El Scrum Master ayuda a todos a modificar estas interacciones para maximizar el valor creado por el Equipo Scrum.</p>",
+										"<div class='row'><div class='col-sm-4'><img id='logo' class='img-responsive' src='./img/scrum_master.jpg' alt='...' class='img-rounded'></div><div class='col-sm-8'><p>A continuación se listan algunas de sus obligaciones:</p><ul><li>Servicios al Dueño del Producto: Ayudar a gestionar la Lista de Producto de manera efectiva; Entender la planificación del producto; Ayudar a ordenar la Lista de Producto para maximizar el valor; Entender y practicar la agilidad (dado que el dueño del producto probablemente sea el menos familiarizado con Scrum); Facilitar los eventos de Scrum según se requiera o necesite.</li><li>Servicio al Equipo de Desarrollo: Guiar al Equipo en ser autoorganizado y multifuncional; Ayudar al Equipo a crear productos maximizando el valor; Eliminar impedimentos para el progreso del trabajo a realizar; Facilitar los eventos de Scrum según se requiera o necesite.</li></ul></div></div>"
 									]
 					},
 					{
 						title: "Conceptos Básicos",
 						subtitle: "Eventos de Scrum",
-						sections: [],
+						sections: [
+										"En la documentacion de Scrum se definen una serie de eventos destinados a regularizar el trabajo de todo el equipo, de esta forma minimizar las reuniones innecesarias y focalizar los momentos de discusión con tematicas precisas. ",
+						],
 						image: "proceso-scrum.jpg",
 					},
 					{
 						title: "Eventos de Scrum",
 						subtitle: "Sprint",
+						sections: [
+										"<div class='row'><div class='col-sm-8'><p>El corazón de Scrum es el Sprint, es un bloque de tiempo de un mes o menos (en rigor puede ir desde dos semanas hasta dos meses, pero se recomienda el plazo de un mes como la mejor práctica) durante el cual se crea un incremento de producto “Terminado”, utilizable y potencialmente desplegable. Es más conveniente si la duración de los Sprints es consistente a lo largo del esfuerzo de desarrollo. Cada nuevo Sprint comienza inmediatamente después de la finalización del Sprint previo. </p><br><p>Los Sprints contienen y consisten de la Reunión de Planificación del Sprint (Sprint Planning Meeting), los Scrums Diarios (Daily Scrums), el trabajo de desarrollo, la Revisión del Sprint (Sprint Review), y la Retrospectiva del Sprint (Sprint Retrospective). </p><br><p>El objetivo del Sprint (Sprint Goal) es una meta establecida al principio del Sprint, esta meta debe mantenerse siempre visible por todo el equipo Scrum, de manera que siempre se tomen las deciciones correspondientes en pro de que este objetivo sea alcanzado.</p></div><div class='col-sm-4'><img id='logo' class='img-responsive' src='./img/sprint.png' alt='...' class='img-rounded'></div></div>"
+						]
 					},
 					{
 						title: "Eventos de Scrum",
 						subtitle: "Sprint Planning Meeting",
+						sections: [
+										"<div class='row'><div class='col-sm-4'><img id='logo' class='img-responsive' src='./img/planing.jpg' alt='...' class='img-rounded'></div><div class='col-sm-8'>El trabajo a realizar durante el Sprint se planifica en la Reunión de Planificación de Sprint. Todo el equipo debe participar en este proceso. <br><br>La Reunión de Planificación de Sprint tiene un máximo de duración de ocho horas para un Sprint de un mes. <br><br>La Reunión de Planificación de Sprint responde a las siguientes preguntas: <br><ul><li>¿Qué puede entregarse en el Incremento resultante del Sprint que comienza?</li><br><li>¿Cómo se conseguirá hacer el trabajo necesario para entregar el Incremento?</li></ul></div></div>"
+						]
 					},
 					{
 						title: "Eventos de Scrum",
 						subtitle: "Daily Scrum",
+						sections: [
+										"<div class='row'><div class='col-sm-8'><p>El Scrum Diario es una reunión con un bloque de tiempo de 15 minutos para que el Equipo de Desarrollo sincronice sus actividades y defina  la planificación para las siguientes 24 horas. Esto se lleva a cabo inspeccionando el trabajo avanzado desde el último Scrum Diario y haciendo una proyección acerca del trabajo que podría completarse antes del siguiente. </p><br><p>Para reducir la complejidad, el Scrum Diario se realiza a la misma hora y en el mismo lugar todos los días, de esta manera no se pierde tiempo notificando o tomando deciciones innecesarias. Durante la reunión, cada miembro del Equipo de Desarrollo explica: </p><br><ul><li>¿Qué hice ayer que ayudó al Equipo de Desarrollo a lograr el Objetivo del Sprint? </li><br><li>¿Qué haré hoy para ayudar al Equipo de Desarrollo a lograr el Objetivo del Sprint? </li><br><li>¿Veo algún impedimento que evite que el Equipo de Desarrollo o yo logremos el Objetivo del Sprint? </li></ul></div><div class='col-sm-4'><img id='logo' class='img-responsive' src='./img/daily-scrum-team.jpg' alt='...' class='img-rounded'></div></div>"
+						]
 					},
 					{
 						title: "Eventos de Scrum",
 						subtitle: "Sprint Review",
+						sections: [
+										"<div class='row'><div class='col-sm-4'><img id='logo' class='img-responsive' src='./img/review.png' alt='...' class='img-rounded'></div><div class='col-sm-8'><p>Al final del Sprint se lleva a cabo una Revisión para identificar el Incremento funcional del producto y así poder adaptar la Lista de Producto si fuese necesario. Durante la Revisión de Sprint, el Equipo Scrum completo discute sobre lo que se hizo durante el Sprint. Basándose en los elementos detectados, y en cualquier cambio que pueda haber surgido en la Lista de Producto durante el Sprint, los asistentes determinan de manera conjunta las siguientes funcionalidades que se abordarán con la finalidad de maximizar el valor.</p><br><p>Se trata de una reunión restringida a un bloque de tiempo máximo de cuatro horas para Sprints de duración estándar.</p><br><p>El resultado de la Revisión de Sprint es una Lista de Producto revisada, que define los elementos de la Lista de Producto posibles para el siguiente Sprint.</p> </div></div>"
+						]
 					},
 					{
 						title: "Eventos de Scrum",
 						subtitle: "Sprint Retrospective",
+						sections: [
+										"<div class='row'><div class='col-sm-6'><p>La Retrospectiva de Sprint es una oportunidad para el Equipo Scrum de inspeccionarse a sí mismo y crear un plan de acción para mejorar su desempeño de cara al siguiene Sprint. </p><p>El propósito de la Retrospectiva de Sprint es: </p><ul><li>Inspeccionar cómo fue el último Sprint en cuanto a personas, relaciones, procesos y herramientas.</li><li>Identificar y ordenar los elementos más importantes que salieron bien y las posibles mejoras.</li><li>Crear un plan para implementar las mejoras a la forma en la que el Equipo Scrum desempeña su trabajo. </li></ul></div><div class='col-sm-6'><img id='logo' class='img-responsive' src='./img/retro.jpg' alt='...' class='img-rounded'></div></div>",
+										"<br><p>Como resultado de la Retrospectiva de Sprint, el equipo Scrum debe haber identificado que falencias presentó en el pasado y obtenido una propuesta para mejorarlas a lo largo del Sprint siguiente. Las mejoras para falencias encontradas en el funcionamiento general o individual del equipo Scrum pueden ser realizadas en cualquier momento del desarrollo (mientras no interfiera con el objetivo o duración del Sprint), pero el proceso de retrospectiva entrega al equipo una instancia especialmente dedicada para este propósito.</p>"
+						]
 					},
 					{
 						title: "Conceptos Básicos",
 						subtitle: "Artefactos de Scrum",
-						sections: [],
-						image: "scrum_process.png",
+						sections: [
+										"<div class='row'><div class='col-sm-6 col-sm-offset-3'><img id='logo' class='img-responsive' src='./img/artefactos.png' alt='...' class='img-rounded'></div></div>"
+						],
 					},
 					{
 						title: "Artefactos de Scrum",
 						subtitle: "Product Backlog",
+						sections: [
+										"<div class='row'><div class='col-sm-3'><img id='logo' class='img-responsive' src='./img/p_backlog.jpg' alt='...' class='img-rounded'></div><div class='col-sm-8 col-sm-offset-1'><p>La Lista de Producto es una lista ordenada de todo lo que podría ser necesario en el producto, y es la única fuente de requisitos para cualquier cambio a realizarse en el producto. El Dueño de Producto (Product Owner) es el responsable de la Lista de Producto, incluyendo su contenido, disponibilidad y ordenación. Toda esta elaboración se realiza con el apoyo del Scrum Master quien esta encargado de orientar al dueño del producto en la correcta elaboración de este artefacto.</p><br><p>Se dice que una Lista de Producto nunca está completa. Por esto, el desarrollo inicial solo debe contemplar los requisitos que se encuentren mas claramente definidos, y priorizando según el valor que aportan al Dueño del Producto.</p></div></div>"
+						]
 					},
 					{
 						title: "Artefactos de Scrum",
 						subtitle: "Sprint Backlog",
+						sections: [
+										"<div class='row'><div class='col-sm-8'><p>La Lista de Pendientes del Sprint se compone por dos partes, por un lado estan los elementos de la Lista de Producto seleccionados para ser realizados en el presente Sprint, y por otra parte el plan definido para entregar el Incremento de producto y conseguir el Objetivo del Sprint. La Lista de Pendientes del Sprint es una predicción hecha por el Equipo de Desarrollo acerca de qué funcionalidad formará parte del próximo Incremento. </p><br><p>La Lista de Pendientes del Sprint hace visible todo el trabajo que el Equipo de Desarrollo identifica como necesario para alcanzar el Objetivo del Sprint.</p></div><div class='col-sm-4'><img id='logo' class='img-responsive' src='./img/s_backlog.png' alt='...' class='img-rounded'></div></div>"
+						]
 					},
 					{
 						title: "Aplicación de Scrum",
