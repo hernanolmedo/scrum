@@ -150,38 +150,31 @@ angular.module('scrum.controllers.index', [])
 					{
 						title: "Aplicación de Scrum",
 						subtitle: "Ejemplo Práctico",
+						sections: [
+										"Se presenta a continuación un ejemplo de aplicación de Scrum para lograr comprender los conceptos presentados.",
+										"<div class='row'><div class='col-sm-8'><p>Se reune un cliente con el scrum master</p><br><p>El cliente expresa que necesita un robot que le sirva de escolta<br>aqui aparce la figura del Product Owner quien se interioriza en la necesidad, para empezar el trabajo con el equipo de Scrum</p><br><p>El dueño del producto separa las ideas del cliente en historias de usuario,con ayuda del scrum master se hace una primera estimación del costo de construcción,ademas de formalizar el Product Backlog con historias priorizadas y pruebas de aceptación.</p></div><div class='col-sm-4'><img id='logo' class='img-responsive' src='./img/agente_inteligente.png' alt='...' class='img-rounded'></div></div>"
+						]
 					},
 					{
 						title: "Aplicación de Scrum",
 						subtitle: "Ejemplo Práctico",
+						sections: [
+										"<div class='row'><div class='col-sm-4'><img id='logo' class='img-responsive' src='./img/agente_inteligente.png' alt='...' class='img-rounded'></div><div class='col-sm-8'><p>Ejemplos de historias de usuario:</p><br><ul><li>Necesito que el robot siga al usuario en sus desplazamientos por la calle.</li><li>Necesito que el robot informe de manera verbal cuando se esté por agotar la batería</li><li>Necesito que el robot contenga información geolocalizada segun se desplace por las calles.</li></ul><br><p>Las historias de usuario deben ser suficientemente pequeñas para poder ser evaluadas y programadas de manera atomica, para este ejemplo se utilizarán historias mas generales solo para la comprensión de los conceptos.</p></div></div>"
+						]
 					},
 					{
 						title: "Aplicación de Scrum",
 						subtitle: "Ejemplo Práctico",
+						sections: [
+										"<div class='row'><div class='col-sm-8'><p>Se formaliza el Product Backlog otorgando códigos para cada historia de la forma HU01.</p><p>El Product Owner y el Scrum master realizan la priorización de las historias de usuario, otorgandole un valor de 1 a 10.</p><br><p>Tambien se realiza una estimación de cuantos días tomará la construcción de cada una, con esta información se determina que la primera historia de usuario requiere de una sprint completo para ser realizada, y las otras dos historias pueden ser realizadas durante el mismo sprint.</p><br></div><div class='col-sm-4'><img id='logo' class='img-responsive' src='./img/agente_inteligente.png' alt='...' class='img-rounded'></div></div>"
+						]
 					},
 					{
 						title: "Aplicación de Scrum",
 						subtitle: "Ejemplo Práctico",
-					},
-					{
-						title: "Aplicación de Scrum",
-						subtitle: "Ejemplo Práctico",
-					},
-					{
-						title: "Aplicación de Scrum",
-						subtitle: "Ejemplo Práctico",
-					},
-					{
-						title: "Aplicación de Scrum",
-						subtitle: "Ejemplo Práctico",
-					},
-					{
-						title: "Aplicación de Scrum",
-						subtitle: "Ejemplo Práctico",
-					},
-					{
-						title: "Aplicación de Scrum",
-						subtitle: "Ejemplo Práctico",
+						sections: [
+										"<div class='row'><div class='col-sm-4'><img id='logo' class='img-responsive' src='./img/agente_inteligente.png' alt='...' class='img-rounded'></div><div class='col-sm-8'><p>A pesar de el alto costo en tiempo de realización, en cuanto a la priorización la historia numero uno es determinante para un prototipo funcional útil, es por esto que la planificacion queda de la sguiente forma:</p><ul><li>Sprint 1: Historia de usuario HU01</li><li>Sprint 2: Historia de usuario HU02 e HU03</li></ul><br><p>Esta programación pudo ser diferente en caso de necesidad técnica o según el interés del Product Owner. Recordamos que las actividades programadas para un Sprint no pueden ser modificadas durante este.</p></div></div>"
+						]
 					},
 					{
 						title: "Fin",
